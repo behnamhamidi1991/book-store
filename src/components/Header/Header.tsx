@@ -13,7 +13,7 @@ import { ThemeContext } from "@/context/ThemeContext";
 import { useContext } from "react";
 
 const Header = () => {
-  const { toggle, theme } = useContext(ThemeContext);
+  const { toggle, theme }: any = useContext(ThemeContext);
 
   return (
     <div dir="rtl" className="header">
