@@ -26,7 +26,7 @@ export const ThemeContextProvider = ({ children }: any) => {
 
   //   localStorage
   useEffect(() => {
-    localStorage.setItem("theme", theme);
+    localStorage.setItem("theme", theme ?? "light");
   }, [theme]);
 
   return (
