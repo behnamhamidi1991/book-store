@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo from "../../app/bookicon.svg";
 import { IoSearch } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
-import { FaMoon } from "react-icons/fa";
+import { IoMdMoon } from "react-icons/io";
 import { IoSunnySharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import userImage from "../../../public/users/1.jpg";
@@ -45,7 +45,7 @@ const Header = () => {
             <FaShoppingCart />
           </button>
           <button className="header-theme-btn" onClick={toggle}>
-            {theme ? <FaMoon /> : <IoSunnySharp />}
+            {theme === "dark" ? <IoSunnySharp /> : <IoMdMoon />}
           </button>
           <Link href="/dashboard" className="header-user-icon">
             <FaUser />

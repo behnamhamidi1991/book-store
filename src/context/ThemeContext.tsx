@@ -2,7 +2,10 @@
 
 import { createContext, useEffect, useState } from "react";
 
-export const ThemeContext = createContext("");
+export const ThemeContext = createContext({
+  theme: "",
+  toggle: () => {},
+});
 
 // LOCAL STORAGE | TOGGLE
 const getFromLocalStorage = () => {
