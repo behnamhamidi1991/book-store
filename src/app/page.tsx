@@ -1,9 +1,12 @@
 "use client";
+import Homepage from "@/components/Homepage/Homepage";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
-  const [theme, setTheme] = useState(false);
-
-  return <div></div>;
+  return (
+    <div>
+      <Homepage />
+    </div>
+  );
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import { ThemeContextProvider } from "@/context/ThemeContext";
+import ThemeProvider from "@/providers/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "کتابفروشی , کتابخانه تیسفون | خوش آمدید",
@@ -20,8 +22,12 @@ export default function RootLayout({
   return (
     <html lang="fa-IR" dir="rtl" className="main">
       <body>
-        <Header />
-        {children}
+        <ThemeContextProvider>
+          <ThemeProvider>
+            <Header />
+            {children}
+          </ThemeProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

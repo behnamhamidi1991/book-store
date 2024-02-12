@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Logo from "../../app/bookicon.svg";
@@ -8,8 +9,12 @@ import { IoSunnySharp } from "react-icons/io5";
 import userImage from "../../../public/users/1.jpg";
 import Link from "next/link";
 import "./header.css";
+import { ThemeContext } from "@/context/ThemeContext";
+import { useContext } from "react";
 
 const Header = () => {
+  const { toggle, theme } = useContext(ThemeContext);
+
   return (
     <div dir="rtl" className="header">
       <div className="header-top">
@@ -38,7 +43,7 @@ const Header = () => {
           <button className="header-cart-btn">
             <FaShoppingCart />
           </button>
-          <button className="header-theme-btn">
+          <button className="header-theme-btn" onClick={toggle}>
             <FaMoon />
           </button>
           <Link href="/dashboard">
