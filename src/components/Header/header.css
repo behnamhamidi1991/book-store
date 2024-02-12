@@ -78,22 +78,18 @@
   gap: 10px;
 }
 
-.header-icons .header-user-image {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+.header-user-icon,
+.header-cart-btn,
+.header-theme-btn {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.header-user-icon {
 }
 
 .header-cart-btn {
-  padding: 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 18px;
 }
 
 .header-theme-btn {
-  padding: 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 18px;
 }

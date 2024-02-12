@@ -6,6 +6,7 @@ import { IoSearch } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 import { IoSunnySharp } from "react-icons/io5";
+import { FaUser } from "react-icons/fa";
 import userImage from "../../../public/users/1.jpg";
 import Link from "next/link";
 import "./header.css";
@@ -44,16 +45,10 @@ const Header = () => {
             <FaShoppingCart />
           </button>
           <button className="header-theme-btn" onClick={toggle}>
-            <FaMoon />
+            {theme ? <FaMoon /> : <IoSunnySharp />}
           </button>
-          <Link href="/dashboard">
-            <Image
-              src={userImage}
-              width={50}
-              height={50}
-              alt="dashboard"
-              className="header-user-image"
-            />
+          <Link href="/dashboard" className="header-user-icon">
+            <FaUser />
           </Link>
         </div>
       </div>
