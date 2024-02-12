@@ -29,16 +29,24 @@ const Header = () => {
           />
           <p> کتابفروشی و کتابخانه تیسفون</p>
         </div>
-        <div className="header-search">
-          <div className="header-search-box">
-            <input
-              type="text"
-              placeholder="می تونی بین 10 میلیون جلد کتاب موجود جستوجو کنی"
-            />
-            <button className="search-icon">
-              <IoSearch />
-            </button>
-          </div>
+        <div className="header-middle">
+          <ul className="header-links">
+            <li>
+              <Link href="/">صفحه اصلی</Link>
+            </li>
+            <li>
+              <Link href="/">وبلاگ</Link>
+            </li>
+            <li>
+              <Link href="/">رویدادها</Link>
+            </li>
+            <li>
+              <Link href="/">درباره ما</Link>
+            </li>
+            <li>
+              <Link href="/">تماس با ما</Link>
+            </li>
+          </ul>
         </div>
         <div className="header-icons">
           <button className="header-cart-btn">
@@ -51,9 +59,6 @@ const Header = () => {
             <FaUser />
           </Link>
         </div>
-      </div>
-      <div className="header-bottom">
-        <ul className="header-links"></ul>
       </div>
     </div>
   );
