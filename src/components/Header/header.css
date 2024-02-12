@@ -85,17 +85,15 @@
 }
 
 .header-cart-btn {
-  border: 1px solid var(--secondary-color);
   padding: 8px;
-  border-radius: 7px;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 18px;
 }
 
 .header-theme-btn {
-  border: 1px solid var(--secondary-color);
   padding: 8px;
-  border-radius: 7px;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 18px;
 }
