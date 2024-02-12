@@ -22,6 +22,7 @@
   height: 60px;
   z-index: 1000;
   box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.05);
+  font-weight: 400;
 }
 
 /* LOGO */
@@ -34,7 +35,7 @@
 }
 
 .header-logo p {
-  font-weight: 900;
+  font-weight: 400;
 }
 .header-logo .header-logo-image {
   width: 25px;
@@ -51,7 +52,6 @@
 .header-links {
   display: flex;
   gap: 50px;
-  font-weight: 900;
 }
 
 /* ICONS */
