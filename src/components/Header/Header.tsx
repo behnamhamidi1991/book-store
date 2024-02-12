@@ -14,21 +14,41 @@ const Header = () => {
     <div dir="rtl" className="header">
       <div className="header-top">
         <div className="header-logo">
-          <Image src={Logo} width={30} height={30} alt="logo" />
-          کتابفروشی و کتابخانه تیسفون
+          <Image
+            src={Logo}
+            width={30}
+            height={30}
+            alt="logo"
+            className="header-logo-image"
+          />
+          <p> کتابفروشی و کتابخانه تیسفون</p>
         </div>
         <div className="header-search">
-          <input
-            type="text"
-            placeholder="می تونی بین 10 میلیون جلد کتاب موجود جستوجو کنی"
-          />
-          <IoSearch className="search-icon" />
+          <div className="header-search-box">
+            <input
+              type="text"
+              placeholder="می تونی بین 10 میلیون جلد کتاب موجود جستوجو کنی"
+            />
+            <button className="search-icon">
+              <IoSearch />
+            </button>
+          </div>
         </div>
         <div className="header-icons">
-          <FaShoppingCart />
-          <FaMoon />
+          <button className="header-cart-btn">
+            <FaShoppingCart />
+          </button>
+          <button className="header-theme-btn">
+            <FaMoon />
+          </button>
           <Link href="/dashboard">
-            <Image src={userImage} width={50} height={50} alt="dashboard" />
+            <Image
+              src={userImage}
+              width={50}
+              height={50}
+              alt="dashboard"
+              className="header-user-image"
+            />
           </Link>
         </div>
       </div>

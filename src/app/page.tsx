@@ -5,5 +5,5 @@ import { useState } from "react";
 export default function Home() {
   const [theme, setTheme] = useState(false);
 
-  return <div className={theme ? "main dark" : "main light"}></div>;
+  return <div></div>;
 }
