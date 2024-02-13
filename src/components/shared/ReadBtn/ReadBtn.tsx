@@ -1,5 +1,5 @@
 import React from "react";
-import "./readBtn.css";
+import "./readbtn.css";
 
 const ReadBtn = () => {
   return <button className="read-more-btn">بیشتر بخوانید</button>;
