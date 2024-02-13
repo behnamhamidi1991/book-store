@@ -25,9 +25,6 @@ const BestBooks = () => {
           // centeredSlides={true}
           spaceBetween={10}
           grabCursor={true}
-          pagination={{
-            clickable: true,
-          }}
           modules={[Pagination]}
           className="bestbooksSwiper"
         >
