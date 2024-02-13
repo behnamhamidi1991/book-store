@@ -89,39 +89,47 @@ const TopSlider = () => {
       <div>
         <div className="header-bottom">
           <div className="header-bottom-box">
-            <div className="header-bottom-box-icon">
-              <TbTruckDelivery />
-            </div>
-            <div className="header-bottom-box-content">
-              <h2>ارسال فوری</h2>
-              <p>ارسال فوری و ویژه به تهران و تمامی شهرهای ایران</p>
-            </div>
-          </div>
-          <div className="header-bottom-box">
-            <div className="header-bottom-box-icon">
-              <BsCreditCard2Front />
-            </div>
-            <div className="header-bottom-box-content">
-              <h2>پرداخت آسان</h2>
-              <p>پرداخت از طریق آنلاین و کیف پول امکان پذیر می باشد</p>
+            <div className="header-bottom-box-container">
+              <div className="header-bottom-box-icon">
+                <TbTruckDelivery />
+              </div>
+              <div className="header-bottom-box-content">
+                <h2>ارسال فوری</h2>
+                <p>ارسال فوری و ویژه به تهران و تمامی شهرهای ایران</p>
+              </div>
             </div>
           </div>
           <div className="header-bottom-box">
-            <div className="header-bottom-box-icon">
-              <IoPricetagsOutline />
-            </div>
-            <div className="header-bottom-box-content">
-              <h2>تخفیف ویژه</h2>
-              <p>تمامی اجناس ما دارای تخفیفات ویژه کاربران سایت می باشد</p>
+            <div className="header-bottom-box-container">
+              <div className="header-bottom-box-icon">
+                <BsCreditCard2Front />
+              </div>
+              <div className="header-bottom-box-content">
+                <h2>پرداخت آسان</h2>
+                <p>پرداخت از طریق آنلاین و کیف پول امکان پذیر می باشد</p>
+              </div>
             </div>
           </div>
           <div className="header-bottom-box">
-            <div className="header-bottom-box-icon">
-              <GoShieldCheck />
+            <div className="header-bottom-box-container">
+              <div className="header-bottom-box-icon">
+                <IoPricetagsOutline />
+              </div>
+              <div className="header-bottom-box-content">
+                <h2>تخفیف ویژه</h2>
+                <p>تمامی اجناس ما دارای تخفیفات ویژه کاربران سایت می باشد</p>
+              </div>
             </div>
-            <div className="header-bottom-box-content">
-              <h2>امنیت پرداخت</h2>
-              <p>درگاه پرداخت ایمن و دارای مجوز رسمی کسب و کارهای مجازی</p>
+          </div>
+          <div className="header-bottom-box">
+            <div className="header-bottom-box-container">
+              <div className="header-bottom-box-icon">
+                <GoShieldCheck />
+              </div>
+              <div className="header-bottom-box-content">
+                <h2>امنیت پرداخت</h2>
+                <p>درگاه پرداخت ایمن و دارای مجوز رسمی کسب و کارهای مجازی</p>
+              </div>
             </div>
           </div>
         </div>

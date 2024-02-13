@@ -4,16 +4,6 @@ import image2 from "../public/books/2.jpg";
 import image3 from "../public/books/3.jpg";
 import image4 from "../public/books/4.jpg";
 import image5 from "../public/books/5.jpg";
-import image6 from "../public/books/6.jpg";
-import image7 from "../public/books/7.jpg";
-import image8 from "../public/books/8.jpg";
-import image9 from "../public/books/9.jpg";
-import image10 from "../public/books/10.jpg";
-import image11 from "../public/books/11.jpg";
-import image12 from "../public/books/12.jpg";
-import image13 from "../public/books/13.jpg";
-import image14 from "../public/books/14.jpg";
-import image15 from "../public/books/15.jpg";
 
 interface BooksInterface {
   id: string;
@@ -78,7 +68,7 @@ export const books: BooksInterface[] = [
   },
   {
     id: "5",
-    title: "تبار انسان",
+    title: "الگوهای طراحی به بیان ساده",
     bookImage: image5,
     details:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",

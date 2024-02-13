@@ -41,7 +41,7 @@
   --post-color: #ffffff;
   --header: #ffffff;
   --border: rgb(223, 223, 223);
-  --blue-color: #455dfc;
+  --blue-primary: #455dfc;
   --footer: #4152ce;
 }
 
@@ -51,7 +51,7 @@
   --post-color: #2a323c;
   --header: #181a1e;
   --border: rgb(70, 72, 80);
-  --blue-color: #8dc9f0;
+  --blue-primary: #6898f1;
   --footer: #333b6e;
 }
 
