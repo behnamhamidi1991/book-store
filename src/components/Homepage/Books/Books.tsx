@@ -9,7 +9,7 @@ const Books = () => {
   return (
     <div className="books-container">
       <div className="books-header">
-        <h2>قرفه پر فروش ها</h2>
+        <h2>غرفه پر فروش ها</h2>
         <p>کتاب های پرفروش و محبوب از دید مخاطبین ما</p>
       </div>
 
@@ -32,7 +32,7 @@ const Books = () => {
               <div className="price-box">
                 <p className="book-price">قیمت: {book.price} تومان</p>
                 {book.offer === true ? (
-                  <p className="book-off-price">تخفیف: {book.offPrice}</p>
+                  <p className="book-off-price">ویژه: {book.offPrice}</p>
                 ) : null}
                 {book.offer === true ? (
                   <p className="book-off-percentage">{book.percentage}</p>

@@ -1,3 +1,23 @@
+:root {
+  --primary-color: #f2f2f2;
+  --secondary-color: #1d232a;
+  --post-color: #ffffff;
+  --header: #ffffff;
+  --border: rgb(223, 223, 223);
+  --blue-color: #455dfc;
+  --footer: #4152ce;
+}
+
+.dark {
+  --primary-color: #1d232a;
+  --secondary-color: #f2f2f2;
+  --post-color: #2a323c;
+  --header: #181a1e;
+  --border: rgb(70, 72, 80);
+  --blue-color: #8dc9f0;
+  --footer: #333b6e;
+}
+
 .image {
   width: 100%;
   opacity: 0.5;
@@ -29,4 +49,51 @@
   line-height: 1.9;
   text-align: justify;
   font-size: 14px;
+}
+
+.header-bottom {
+  display: flex;
+  gap: 20px;
+  background-color: var(--post-color);
+  height: 170px;
+  padding: 0 20%;
+  justify-content: center;
+}
+
+.header-bottom-box {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--border);
+  padding: 0 15px;
+  width: 340px;
+  cursor: pointer;
+  color: var(--blue-color);
+  transition: all ease-in-out 0.1s;
+}
+
+.header-bottom-box:hover {
+  transform: translateY(5px);
+  color: var(--secondary-color);
+}
+
+.header-bottom-box:last-child {
+  border-left: 1px solid var(--border);
+}
+
+.header-bottom-box-icon {
+  font-size: 38px;
+}
+
+.header-bottom-box-content h2 {
+  font-weight: 900;
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+.header-bottom-box-content p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
 }

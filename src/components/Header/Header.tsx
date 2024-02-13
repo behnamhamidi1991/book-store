@@ -2,12 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../../app/bookicon.svg";
-import { IoSearch } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoMdMoon } from "react-icons/io";
 import { IoSunnySharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
-import userImage from "../../../public/users/1.jpg";
+
 import Link from "next/link";
 import "./header.css";
 import { ThemeContext } from "@/context/ThemeContext";

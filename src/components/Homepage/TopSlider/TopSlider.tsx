@@ -7,6 +7,10 @@ import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "./topslider.css";
+import { TbTruckDelivery } from "react-icons/tb";
+import { BsCreditCard2Front } from "react-icons/bs";
+import { IoPricetagsOutline } from "react-icons/io5";
+import { GoShieldCheck } from "react-icons/go";
 
 import Image1 from "../../../assets/slides/1.jpg";
 import Image2 from "../../../assets/slides/2.jpg";
@@ -14,7 +18,7 @@ import Image3 from "../../../assets/slides/3.jpg";
 
 const TopSlider = () => {
   return (
-    <>
+    <div className="topSlider-component">
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -82,7 +86,47 @@ const TopSlider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+      <div>
+        <div className="header-bottom">
+          <div className="header-bottom-box">
+            <div className="header-bottom-box-icon">
+              <TbTruckDelivery />
+            </div>
+            <div className="header-bottom-box-content">
+              <h2>ارسال فوری</h2>
+              <p>ارسال فوری و ویژه به تهران و تمامی شهرهای ایران</p>
+            </div>
+          </div>
+          <div className="header-bottom-box">
+            <div className="header-bottom-box-icon">
+              <BsCreditCard2Front />
+            </div>
+            <div className="header-bottom-box-content">
+              <h2>پرداخت آسان</h2>
+              <p>پرداخت از طریق آنلاین و کیف پول امکان پذیر می باشد</p>
+            </div>
+          </div>
+          <div className="header-bottom-box">
+            <div className="header-bottom-box-icon">
+              <IoPricetagsOutline />
+            </div>
+            <div className="header-bottom-box-content">
+              <h2>تخفیف ویژه</h2>
+              <p>تمامی اجناس ما دارای تخفیفات ویژه کاربران سایت می باشد</p>
+            </div>
+          </div>
+          <div className="header-bottom-box">
+            <div className="header-bottom-box-icon">
+              <GoShieldCheck />
+            </div>
+            <div className="header-bottom-box-content">
+              <h2>امنیت پرداخت</h2>
+              <p>درگاه پرداخت ایمن و دارای مجوز رسمی کسب و کارهای مجازی</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

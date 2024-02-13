@@ -18,7 +18,9 @@
   margin-bottom: 18px;
 }
 .books-header h2 {
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: 100;
+  margin-bottom: 5px;
 }
 
 .books-box {
@@ -57,8 +59,8 @@
 .price-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  font-size: 12px;
+  gap: 1px;
+  font-size: 10px;
   margin: 15px 0;
   font-weight: 900;
   position: absolute;
