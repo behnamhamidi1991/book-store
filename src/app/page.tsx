@@ -5,8 +5,8 @@ import { useState } from "react";
 
 export default function Home() {
   return (
-    <div>
+    <main className="book-store">
       <Homepage />
-    </div>
+    </main>
   );
 }

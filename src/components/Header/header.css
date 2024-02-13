@@ -36,10 +36,11 @@
 
 .header-logo p {
   font-weight: 400;
+  font-size: 14px;
 }
 .header-logo .header-logo-image {
-  width: 25px;
-  height: 25px;
+  width: 19px;
+  height: 19px;
 }
 
 /* SEARCH */
@@ -52,6 +53,7 @@
 .header-links {
   display: flex;
   gap: 50px;
+  font-size: 14px;
 }
 
 /* ICONS */

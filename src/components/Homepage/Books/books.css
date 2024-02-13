@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #f2f2f2;
+  --secondary-color: #1d232a;
+  --post-color: #ffffff;
+  --header: #ffffff;
+  --blue-color: #455dfc;
+  --footer: #4152ce;
+}
+
+.books-container {
+  padding: 100px 9%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 100%;
+}
+
+.books-header {
+  margin-bottom: 18px;
+}
+.books-header h2 {
+  font-size: 22px;
+}
+
+.books-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.books-box .book-image {
+  width: 100%;
+}
+
+/* BOOK BOX */
+.book-item {
+  background-color: var(--post-color);
+  position: relative;
+}
+.book-item .book-content {
+  padding: 2% 8%;
+}
+
+.book-item .book-content h2 {
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+.book-item .book-content .book-details {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.price-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 12px;
+  margin: 15px 0;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+}
+
+.book-price {
+  background-color: rgb(11, 97, 177);
+  padding: 6px 9px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.book-off-price {
+  background-color: rgb(11, 177, 121);
+  padding: 6px 9px;
+  border-radius: 20px;
+  color: #fff;
+}
+.book-off-percentage {
+  background-color: orange;
+  padding: 6px 9px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.books-btn-container {
+  display: flex;
+  gap: 5px;
+}
