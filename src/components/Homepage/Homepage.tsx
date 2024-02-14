@@ -3,6 +3,8 @@ import TopSlider from "./TopSlider/TopSlider";
 import Books from "./Books/Books";
 import BestBooks from "./BestBooks/BestBooks";
 import Psychology from "./Psychology/Psychology";
+import StudentDiscount from "./StudentDiscount/StudentDiscount";
+import BookCart from "../shared/BookCart/BookCart";
 
 const Homepage = () => {
   return (
@@ -11,6 +13,7 @@ const Homepage = () => {
       <Books />
       <BestBooks />
       <Psychology />
+      <StudentDiscount />
     </div>
   );
 };
