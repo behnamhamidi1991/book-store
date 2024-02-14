@@ -8,17 +8,17 @@
   --footer: #4152ce;
 }
 
-.bestbooks {
-  padding: 50px 9% 20px 9%;
+.psychology {
+  padding: 0 9%;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   height: 100%;
 }
 
-.bestbooks {
+.psychology {
   margin-bottom: 18px;
 }
-.bestbooks h2 {
+.psychology h2 {
   font-size: 26px;
   font-weight: 100;
   margin-bottom: 5px;

@@ -8,10 +8,10 @@ import ReadBtn from "@/components/shared/ReadBtn/ReadBtn";
 const Books = () => {
   return (
     <div className="books-container">
-      <div className="books-header">
+      {/* <div className="books-header">
         <h2>غرفه پر فروش ها</h2>
         <p>کتاب های پرفروش و محبوب از دید مخاطبین ما</p>
-      </div>
+      </div> */}
 
       <div className="books-box">
         {books.map((book) => (
