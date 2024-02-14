@@ -22,11 +22,29 @@ const BestBooks = () => {
 
       <div className="bestbooks-slider">
         <Swiper
-          slidesPerView={5}
+          slidesPerView={1}
           loop={true}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
+          }}
+          breakpoints={{
+            770: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            1062: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            1364: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            1840: {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
           }}
           spaceBetween={10}
           grabCursor={true}

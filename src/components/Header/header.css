@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   width: auto;
 }
 
@@ -91,5 +91,24 @@
   }
   .hamburger-menu {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .header-logo {
+    display: none;
+  }
+
+  .hamburger-icon {
+    font-size: 21px;
+  }
+  .header-user-icon,
+  .header-cart-btn,
+  .header-theme-btn {
+    font-size: 16px;
+  }
+
+  .header-top {
+    gap: 20px;
   }
 }
