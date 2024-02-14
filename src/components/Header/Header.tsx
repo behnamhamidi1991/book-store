@@ -6,7 +6,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { IoMdMoon } from "react-icons/io";
 import { IoSunnySharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 import Link from "next/link";
 import "./header.css";
 import { ThemeContext } from "@/context/ThemeContext";
@@ -18,6 +18,11 @@ const Header = () => {
   return (
     <div dir="rtl" className="header">
       <div className="header-top">
+        <div className="hamburger-menu">
+          <button>
+            <GiHamburgerMenu className="hamburger-icon" />
+          </button>
+        </div>
         <div className="header-logo">
           <Image
             src={Logo}
@@ -27,6 +32,8 @@ const Header = () => {
             className="header-logo-image"
           />
           <p> کتابفروشی و کتابخانه تیسفون</p>
+
+          <div className="header-logo-hamburger"></div>
         </div>
         <div className="header-middle">
           <ul className="header-links">

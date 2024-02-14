@@ -3,7 +3,8 @@
   --secondary-color: #1d232a;
   --post-color: #ffffff;
   --header: #ffffff;
-  --blue-color: #455dfc;
+  --border: rgb(223, 223, 223);
+  --blue-primary: #455dfc;
   --footer: #4152ce;
 }
 
@@ -25,14 +26,18 @@
 
 .bestbooksSwiper {
   margin-top: 20px;
+  padding: 20px 10px;
+  background-color: var(--post-color);
   box-shadow: 1px 1px 16px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 .bestbooks-slide-box {
-  padding: 20px 10px;
+  border: 1px solid var(--border);
 }
 
 .bestbooks-slide-box h3 {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .bestbooks-price-books {
@@ -45,4 +50,14 @@
   display: flex;
   gap: 3px;
   color: gold;
+  margin-bottom: 15px;
+}
+
+.bestbooks-slide-box-info {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.bestbook-offprice {
+  margin-bottom: 12px;
 }

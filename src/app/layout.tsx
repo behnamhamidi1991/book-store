@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "کتابفروشی , کتابخانه تیسفون | خوش آمدید",
@@ -26,6 +27,7 @@ export default function RootLayout({
           <ThemeProvider>
             <Header />
             {children}
+            <Footer />
           </ThemeProvider>
         </ThemeContextProvider>
       </body>
