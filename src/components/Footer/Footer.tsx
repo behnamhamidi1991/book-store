@@ -5,6 +5,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top-box">
+        <h2 className="get-news-title">عضویت در خبرنامه</h2>
+        <p className="get-news-subtitle">
+          تنها با یک کلیک ساده عضو خبرنامه ما شوید
+        </p>
         <input
           type="email"
           placeholder="عضویت در خبرنامه | ایمیل خود را وارد کنید ..."
@@ -32,7 +36,40 @@ const Footer = () => {
           </div>
           <div className="social-media-links"></div>
         </div>
-        <div className="footer-links"></div>
+        <div className="footer-links">
+          <ul>
+            <h3>صفحات مهم</h3>
+            <li>صفحه اصلی</li>
+            <li>وبلاگ</li>
+            <li>رویدادها</li>
+            <li>تماس با ما</li>
+            <li>درباره ما</li>
+          </ul>
+          <ul>
+            <h3>صفحات مهم</h3>
+            <li>صفحه اصلی</li>
+            <li>وبلاگ</li>
+            <li>رویدادها</li>
+            <li>تماس با ما</li>
+            <li>درباره ما</li>
+          </ul>
+          <ul>
+            <h3>صفحات مهم</h3>
+            <li>صفحه اصلی</li>
+            <li>وبلاگ</li>
+            <li>رویدادها</li>
+            <li>تماس با ما</li>
+            <li>درباره ما</li>
+          </ul>
+          <ul>
+            <h3>صفحات مهم</h3>
+            <li>صفحه اصلی</li>
+            <li>وبلاگ</li>
+            <li>رویدادها</li>
+            <li>تماس با ما</li>
+            <li>درباره ما</li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
