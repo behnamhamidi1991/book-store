@@ -13,7 +13,7 @@ import { ThemeContext } from "@/context/ThemeContext";
 import { useContext } from "react";
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState<boolean>(false);
   const { toggle, theme }: any = useContext(ThemeContext);
 
   return (
