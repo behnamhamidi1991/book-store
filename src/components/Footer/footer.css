@@ -142,6 +142,20 @@
     padding: 0 20px;
     justify-content: center;
   }
+
+  .footer-top-box {
+    padding: 0 25px;
+  }
+  .footer-top-box {
+    height: 180px;
+  }
+
+  .footer-top-box input {
+    font-size: 13px;
+  }
+  .footer-top-box {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -150,5 +164,9 @@
     gap: 30px;
     align-items: center;
     justify-content: center;
+  }
+
+  .footer-top-box input {
+    font-size: 11px;
   }
 }

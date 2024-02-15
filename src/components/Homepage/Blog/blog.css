@@ -18,6 +18,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   grid-gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-post-box {
@@ -50,4 +52,21 @@
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+@media screen and (max-width: 1348px) {
+  .blog-container-content h2 {
+    font-size: 16px;
+  }
+
+  .blog-text {
+    line-height: 1.5;
+    font-size: 13px;
+  }
+
+  .blog-info-box {
+    line-height: 1.8;
+    font-size: 13px;
+    padding-top: 10px;
+  }
 }
