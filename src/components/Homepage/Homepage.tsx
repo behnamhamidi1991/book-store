@@ -5,6 +5,8 @@ import BestBooks from "./BestBooks/BestBooks";
 import Psychology from "./Psychology/Psychology";
 import StudentDiscount from "./StudentDiscount/StudentDiscount";
 import BookCart from "../shared/BookCart/BookCart";
+import BookCafe from "./BookCafe/BookCafe";
+import Blog from "./Blog/Blog";
 
 const Homepage = () => {
   return (
@@ -14,6 +16,8 @@ const Homepage = () => {
       <BestBooks />
       <Psychology />
       <StudentDiscount />
+      <BookCafe />
+      <Blog />
     </div>
   );
 };

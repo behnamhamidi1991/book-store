@@ -23,7 +23,11 @@ const BookCart = () => {
       >
         {books.map((book) => (
           <SwiperSlide key={book.id} className="swiper-slide-history">
-            <Image src={book.bookImage} alt="test" width={300} />
+            <Image
+              src={book.bookImage}
+              alt="test"
+              className="bookcart-images"
+            />
           </SwiperSlide>
         ))}
       </Swiper>
