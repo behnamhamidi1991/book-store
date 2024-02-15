@@ -24,7 +24,7 @@
   top: -100px;
   background-color: var(--post-color);
   color: var(--secondary-color);
-  width: 90%;
+  width: 80%;
   height: 230px;
   border: none;
   border-radius: 5px;
@@ -103,4 +103,52 @@
 
 .footer-links ul li:hover {
   transform: translateX(-5px);
+}
+
+@media screen and (max-width: 1480px) {
+  .footer {
+    height: 100%;
+    padding-bottom: 120px;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    padding-top: 190px;
+  }
+
+  .footer-links {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 150px;
+  }
+}
+
+@media screen and (max-width: 1146px) {
+  .footer-links {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 914px) {
+  .footer-links {
+    padding: 0 30px;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .footer-links {
+    padding: 0 20px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
 }
