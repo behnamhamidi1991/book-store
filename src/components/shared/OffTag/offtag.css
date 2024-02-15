@@ -65,3 +65,35 @@
 .off-text {
   line-height: 1.8;
 }
+
+@media screen and (max-width: 1432px) {
+  .off-sign-wrapper {
+    top: 650px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 1266px) {
+  .off-sign-wrapper {
+    top: 690px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 1057px) {
+  .off-sign-wrapper {
+    top: 740px;
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .off-sign-wrapper {
+    top: 780px;
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .off-sign-wrapper {
+    display: none;
+  }
+}

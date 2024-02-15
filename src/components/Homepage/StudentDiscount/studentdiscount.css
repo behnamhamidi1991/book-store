@@ -50,7 +50,7 @@
   font-size: 40px;
   margin-bottom: 20px;
   font-weight: 900;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .student-discount-percentage-detail {
@@ -65,4 +65,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1727px) {
+  .student-discount-percentage-detail {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 1581px) {
+  .student-discount-percentage-detail {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .student-discount {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .off-tag-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+  } */
+}
+@media screen and (max-width: 760px) {
+  .student-discount-percentage-title {
+    font-size: 31px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .student-discount-percentage-title {
+    font-size: 22px;
+  }
+  .student-discount-percentage-detail {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .student-discount-percentage-title {
+    font-size: 17px;
+  }
 }

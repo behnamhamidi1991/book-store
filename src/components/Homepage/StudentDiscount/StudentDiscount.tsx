@@ -9,7 +9,9 @@ const StudentDiscount = () => {
     <div className="student-discount">
       <div className="student-discount-right">
         <div className="student-discount-right-top">
-          <OffTag />
+          <div className="off-tag-wrapper">
+            <OffTag />
+          </div>
           <h1 className="student-discount-percentage-title">
             تخفیف ویژه دانشجویان و دانش آموزان
           </h1>
