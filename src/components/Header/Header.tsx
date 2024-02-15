@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../app/bookicon.svg";
 import { FaShoppingCart } from "react-icons/fa";
@@ -13,13 +13,14 @@ import { ThemeContext } from "@/context/ThemeContext";
 import { useContext } from "react";
 
 const Header = () => {
+  const [menu, setMenu] = useState(false);
   const { toggle, theme }: any = useContext(ThemeContext);
 
   return (
     <div dir="rtl" className="header">
       <div className="header-top">
         <div className="hamburger-menu">
-          <button>
+          <button onClick={() => setMenu(!menu)}>
             <GiHamburgerMenu className="hamburger-icon" />
           </button>
         </div>
@@ -36,7 +37,7 @@ const Header = () => {
           <div className="header-logo-hamburger"></div>
         </div>
         <div className="header-middle">
-          <ul className="header-links">
+          <ul className={menu ? "header-links show" : "header-links"}>
             <li>
               <Link href="/">صفحه اصلی</Link>
             </li>
