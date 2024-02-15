@@ -6,9 +6,6 @@ const BookCafe = () => {
   return (
     <div className="book-cafe">
       <div className="book-cafe-container">
-        <div className="book-cafe-right">
-          <BookCart />
-        </div>
         <div className="book-cafe-left">
           <h1>عضویت در کتابخانه مجموعه</h1>
           <p>
