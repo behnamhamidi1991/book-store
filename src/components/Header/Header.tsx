@@ -62,7 +62,7 @@ const Header = () => {
           <button className="header-theme-btn" onClick={toggle}>
             {theme === "dark" ? <IoSunnySharp /> : <IoMdMoon />}
           </button>
-          <Link href="/dashboard" className="header-user-icon">
+          <Link href="/login" className="header-user-icon">
             <FaUser />
           </Link>
         </div>

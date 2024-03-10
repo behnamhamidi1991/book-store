@@ -4,6 +4,8 @@ import Header from "@/components/Header/Header";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
 import Footer from "@/components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
   title: "کتابفروشی , کتابخانه تیسفون | خوش آمدید",
@@ -27,7 +29,8 @@ export default function RootLayout({
           <ThemeProvider>
             <Header />
             {children}
-            <Footer />
+            {/* <Footer /> */}
+            <ToastContainer />
           </ThemeProvider>
         </ThemeContextProvider>
       </body>

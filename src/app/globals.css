@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: yekan;
-  src: url("../assets/fonts/Vazir.woff");
+  src: url("../assets/fonts/Yekan/BYekan+.ttf");
 }
 
 :root {
@@ -61,7 +61,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: vazir;
+  font-family: "vazir";
   list-style: none;
   text-decoration: none;
 }
@@ -69,4 +69,13 @@
 .book-store {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "yekan";
 }
