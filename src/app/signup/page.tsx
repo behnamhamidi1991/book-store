@@ -1,14 +1,24 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import "./signup.css";
 import Link from "next/link";
 import { toast } from "react-toastify";
+import { useRouter } from "next/router";
+import axios from "axios";
 
 const handleSubmit = (e) => {
   e.preventDefault();
 };
 
-const page = () => {
+const SignupPage = () => {
+  const [user, setUser] = React.useState({
+    email: "",
+    password: "",
+    username: "",
+  });
+
+  const onSignup = async () => {};
+
   return (
     <div className="signup-page">
       <form className="signup-form" onSubmit={handleSubmit}>
@@ -30,4 +40,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default SignupPage;
