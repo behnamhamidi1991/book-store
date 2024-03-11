@@ -35,14 +35,11 @@ export async function POST(request: NextRequest) {
     const savedUser = await newUser.save();
     console.log(savedUser);
 
-    return NextResponse.json(
-      {
-        message: "اکانت کاربری با موفقیت ساخته شد",
-        success: true,
-        savedUser,
-      },
-      { status: 201 }
-    );
+    return NextResponse.json({
+      message: "اکانت کاربری با موفقیت ساخته شد",
+      success: true,
+      savedUser,
+    });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }

@@ -1,3 +1,16 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f1f1f1;
+  -webkit-box-shadow: 0 0 0px 1000px var(--primary-color) inset;
+}
+
 .signup-page {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -14,6 +27,7 @@
   flex-direction: column;
   background-color: var(--post-color);
   padding: 30px;
+  position: relative;
 }
 
 .signup-form .signup-page-header h2 {
@@ -26,6 +40,13 @@
   margin-bottom: 18px;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 1000s;
+}
+
 .signup-form input {
   padding: 10px 12px;
   outline: none;
@@ -34,8 +55,8 @@
   background-color: var(--primary-color);
 }
 
-.signup-form button {
-  background-color: var(--blue-primary);
+.signupBtn {
+  background-color: rgb(41, 95, 242);
   color: #fff;
   padding: 10px 0;
   width: 100%;
@@ -45,10 +66,6 @@
   cursor: pointer;
 }
 
-.signup-form button:hover {
-  background-color: var(--footer);
-}
-
 .loginBtn {
   background-color: tomato;
   color: #fff;
@@ -56,4 +73,9 @@
   text-align: center;
   padding: 10px;
   border-radius: 5px;
+}
+
+.spinnerContainer {
+  position: absolute;
+  left: 40px;
 }
