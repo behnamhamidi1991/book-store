@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./signup.css";
 import Link from "next/link";
 import { toast } from "react-toastify";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import axios from "axios";
 
 const handleSubmit = (e) => {
@@ -11,13 +11,18 @@ const handleSubmit = (e) => {
 };
 
 const SignupPage = () => {
+  const router = useRouter();
   const [user, setUser] = React.useState({
     email: "",
     password: "",
     username: "",
   });
 
+  const [buttonDisabled, setButtonDisabled] = React.useState(false);
+
   const onSignup = async () => {};
+
+  useEffect(() => {}, [user]);
 
   return (
     <div className="signup-page">
